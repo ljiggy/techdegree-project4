@@ -1,0 +1,18 @@
+//Breakpoints
+$break-xs: 575px;
+$break-s: 576px;
+$break-m: 768px;
+$break-l: 992px;
+
+//Colors
+$color-teal1:#58e1c1;
+$color-teal2:#7ee6fd;
+$white: #fff;
+$color-purp: #927bc1;
+$gray:#777;
+$color-purp-diff: adjust-hue($color-purp, 50);
+$complement1: adjust-hue($color-purp, 200);
+
+$complement3: complement($color-teal1);
+$complement4: adjust-hue($color-purp, 400);
+$complement2: adjust-hue($color-purp, 1150)

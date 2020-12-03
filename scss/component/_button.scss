@@ -1,0 +1,56 @@
+/* ============================================= */
+/*              Buttons                          */
+/* ============================================= */
+
+.btn {
+    margin-top: 15px;
+    width: 100%;
+    color: $white;
+    background-color: $color-purp;
+    border: none;
+    padding: 10px 0;
+    text-transform: uppercase;
+    border-radius: 5px;
+    @include roundy(100%, 2px);
+    transition: 
+        background-color 1s ease-in-out, 
+        color .2s ease-in-out;
+    @media (min-width: $break-m) {
+    padding: 10px 30px;
+    }
+
+
+  &:hover {
+   filter: brightness(110%);
+    background-color: lighten($color-purp, 15%);
+    }
+}
+
+
+  .btn + .btn {
+    @media (min-width: $break-m) {
+    margin-left: 10px;
+    }
+  }
+  
+  .default {
+    background-color: $complement1;
+  
+  }
+  
+  .error {
+    background-color: $complement4;
+  }
+  
+  .btn .info {
+    background-color: $color-purp;
+  }
+  
+  .success {
+    background-color: $complement2;
+    
+  }
+  
+  .warning {
+    background-color: $complement3;
+  }

@@ -1,0 +1,41 @@
+/* ============================================= */
+/*              Navigation                       */
+/* ============================================= */
+
+
+
+
+.nav {
+    padding-left: 0;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $break-m) {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        }
+    .nav-link {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5em;
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        padding: 10px 0;
+        display: block;
+        width: 100%;
+        transition: 
+        background-color 1s ease-in-out, 
+        color .2s ease-in-out;
+        @media (min-width: $break-m) {
+            flex-basis: 100px;
+        }
+    }
+    .nav-link:hover {
+        color: $white;
+        background-color: $color-teal1;
+    
+    }
+  }
+  
+ 
