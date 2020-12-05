@@ -6,7 +6,6 @@
     margin-top: 15px;
     width: 100%;
     color: $white;
-    background-color: $color-purp;
     border: none;
     padding: 10px 0;
     text-transform: uppercase;
@@ -22,7 +21,6 @@
 
   &:hover {
    filter: brightness(110%);
-    background-color: lighten($color-purp, 15%);
     }
 }
 
@@ -35,22 +33,36 @@
   
   .default {
     background-color: $complement1;
+    &:hover {
+       background-color: lighten($complement1, 15%);
+       }
+   }
   
-  }
   
   .error {
     background-color: $complement4;
+    &:hover {
+      background-color: lighten($complement4, 15%);
+      }
   }
   
-  .btn .info {
-    background-color: $color-purp;
+.info {
+    background-color: $color-purp-diff;
+    &:hover {
+      background-color: lighten($color-purp-diff, 15%);
+      }
   }
   
   .success {
     background-color: $complement2;
-    
+    &:hover {
+      background-color: lighten($complement2, 15%);
+      }
   }
   
   .warning {
     background-color: $complement3;
+    &:hover {
+      background-color: lighten($complement4, 15%);
+      }
   }
